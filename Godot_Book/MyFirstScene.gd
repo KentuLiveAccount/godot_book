@@ -5,7 +5,7 @@ const MOVEMENT_SPEED = 50 # pixels per second
 var input_direction = 0 # 0 is no movement, 1 is right, -1 is left
 
 # user defined signal
-signal keyinput()
+signal keyinput(d)
 
 func _ready():
 	self.connect("keyinput", self, "_on_keyinput")
